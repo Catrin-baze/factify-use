@@ -18,16 +18,3 @@ ifdetect = st.sidebar.button('输出检测结果')
 
 
 
-col1, col2 = st.beta_columns(2)
-with col1:
-   st.header("新闻图像")
-   image1 = Image.open('image/claim1.jpg')
-   st.image(image1)
-
-with col2:
-   st.header("证据图像")
-   image2 = Image.open('image/doc1.jpg')
-   st.image(image2)
-
-
-
