@@ -15,12 +15,13 @@ midpro = st.sidebar.radio('2.是否显示中间过程:', ['是', '否'])
 ifdetect = st.sidebar.button('输出检测结果')
 #image = Image.open('image/claim1.jpg')
 #st.image(image, caption='Sunrise by the mountains',use_column_width=True)
-st.write('新闻图像')
+st.subheader('新闻图像')
 if news_class == '案例一':
  image = Image.open('image/claim1.jpg')
  #st.image(image, caption='Sunrise by the mountains',use_column_width=True)
  st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
- st.markdown('Streamlit is **_really_ cool**.')
+ st.markdown('**新闻文本：**Mumbai: Actors Amitabh Bachchan, Jaya Bachchan, Abhishek Bachchan &amp; Aishwarya Rai Bachchan cast their vote at a polling booth in Juhu. #LokSabhaElections2019 https://t.co/BRAxZr1Jkk
+.')
 
  
 
