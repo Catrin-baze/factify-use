@@ -15,7 +15,7 @@ midpro = st.sidebar.radio('2.是否显示中间过程:', ['是', '否'])
 ifdetect = st.sidebar.button('输出检测结果')
 #image = Image.open('image/claim1.jpg')
 #st.image(image, caption='Sunrise by the mountains',use_column_width=True)
-st.subheader('新闻图像')
+st.write('新闻图像')
 if news_class == '案例一':
  image = Image.open('image/claim1.jpg')
  st.image(image, caption='Sunrise by the mountains',use_column_width=True)
