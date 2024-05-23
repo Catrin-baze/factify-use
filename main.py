@@ -12,6 +12,19 @@ st.sidebar.subheader('新闻案例选择')       # 副标题
 cluster_class = st.sidebar.selectbox('1.案例选择:', list(range(1, 6)))     
 midpro = st.sidebar.radio('2.是否显示中间过程:', ['是', '否'])        
 ifdetect = st.sidebar.button('输出检测结果')
-image = Image.open('image/claim1.jpg')
-st.image(image, caption='Sunrise by the mountains',use_column_width=True)
+#image = Image.open('image/claim1.jpg')
+#st.image(image, caption='Sunrise by the mountains',use_column_width=True)
+
+col1, col2 = st.beta_columns(2)
+with col1:
+   st.header("新闻图像")
+   image1 = Image.open('image/claim1.jpg')
+   st.image(image1)
+
+with col2:
+   st.header("证据图像")
+   image2 = Image.open('image/doc1.jpg')
+   st.image(image2)
+
+
 
