@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-st.title('多模态虚假新闻检测算法'.center(33, '-'))
+st.title('多模态虚假新闻检测算法')
  
 # 设置侧边栏     Tips:所有侧边栏的元素都必须在前面加上 sidebar，不然会在主页显示
 st.sidebar.expander('')     # expander必须接受一个 label参数，我这里留了一个空白
