@@ -20,7 +20,7 @@ if news_class == '案例一':
  image = Image.open('image/claim1.jpg')
  #st.image(image, caption='Sunrise by the mountains',use_column_width=True)
  st.image(image, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
- st.markdown('**新闻文本：**Mumbai: Actors Amitabh Bachchan, Jaya Bachchan, Abhishek Bachchan &amp; Aishwarya Rai Bachchan cast their vote at a polling booth in Juhu. #LokSabhaElections2019 https://t.co/BRAxZr1Jkk
+ st.markdown('**新闻文本**：Mumbai: Actors Amitabh Bachchan, Jaya Bachchan, Abhishek Bachchan &amp; Aishwarya Rai Bachchan cast their vote at a polling booth in Juhu. #LokSabhaElections2019 https://t.co/BRAxZr1Jkk
 .')
 
  
