@@ -18,7 +18,9 @@ ifdetect = st.sidebar.button('输出检测结果')
 st.write('新闻图像')
 if news_class == '案例一':
  image = Image.open('image/claim1.jpg')
- st.image(image, caption='Sunrise by the mountains',use_column_width=True)
+ #st.image(image, caption='Sunrise by the mountains',use_column_width=True)
+ st.image(image, caption=None, width=30, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
+
  
 
 
