@@ -101,7 +101,8 @@ if midpro == '是':
     st.sidebar.markdown('CLIP文本检测结果：证据不足')
     st.sidebar.markdown('ResNet图像语义一致性：0.514161')
     st.sidebar.markdown('**最终检测结果：多模态证据不足**')
-  elif news_class == '案例五':
+ 
+ elif news_class == '案例五':
    if ifdetect:
     st.sidebar.markdown('ROUGE字面词汇一致性：')
     st.sidebar.markdown('Sbert文本语义一致性：')
