@@ -75,35 +75,35 @@ ifdetect = st.sidebar.button('输出检测结果')
 if midpro == '是':
  if news_class == '案例一':
   if ifdetect:
-   st.sidebar.markdown('字面词汇一致性：')
+   st.sidebar.markdown('ROUGE字面词汇一致性：')
    st.sidebar.markdown('Sbert文本语义一致性：')
    st.sidebar.markdown('CLIP文本检测结果：')
    st.sidebar.markdown('ResNet图像语义一致性：')
    st.sidebar.markdown('**最终检测结果：**')
   elif news_class == '案例二':
    if ifdetect:
-    st.sidebar.markdown('字面词汇一致性：')
+    st.sidebar.markdown('ROUGE字面词汇一致性：')
     st.sidebar.markdown('Sbert文本语义一致性：')
     st.sidebar.markdown('CLIP文本检测结果：')
     st.sidebar.markdown('ResNet图像语义一致性：')
     st.sidebar.markdown('**最终检测结果：**')
   elif news_class == '案例三':
    if ifdetect:
-    st.sidebar.markdown('字面词汇一致性：')
+    st.sidebar.markdown('ROUGE字面词汇一致性：')
     st.sidebar.markdown('Sbert文本语义一致性：')
     st.sidebar.markdown('CLIP文本检测结果：')
     st.sidebar.markdown('ResNet图像语义一致性：')
     st.sidebar.markdown('**最终检测结果：**')
   elif news_class == '案例四':
    if ifdetect:
-    st.sidebar.markdown('字面词汇一致性：')
-    st.sidebar.markdown('Sbert文本语义一致性：')
-    st.sidebar.markdown('CLIP文本检测结果：')
-    st.sidebar.markdown('ResNet图像语义一致性：')
-    st.sidebar.markdown('**最终检测结果：**')
+    st.sidebar.markdown('ROUGE字面词汇一致性：0.312500')
+    st.sidebar.markdown('Sbert文本语义一致性：0.464466')
+    st.sidebar.markdown('CLIP文本检测结果：证据不足')
+    st.sidebar.markdown('ResNet图像语义一致性：0.514161')
+    st.sidebar.markdown('**最终检测结果：多模态证据不足**')
   elif news_class == '案例五':
    if ifdetect:
-    st.sidebar.markdown('字面词汇一致性：')
+    st.sidebar.markdown('ROUGE字面词汇一致性：')
     st.sidebar.markdown('Sbert文本语义一致性：')
     st.sidebar.markdown('CLIP文本检测结果：')
     st.sidebar.markdown('ResNet图像语义一致性：')
@@ -121,7 +121,7 @@ elif midpro == '否':
     st.sidebar.markdown('**最终检测结果：**')
  elif news_class == '案例四':
    if ifdetect:
-    st.sidebar.markdown('**最终检测结果：**')
+    st.sidebar.markdown('**最终检测结果：多模态证据不足**')
  elif news_class == '案例五':
    if ifdetect:
     st.sidebar.markdown('**最终检测结果：**')
