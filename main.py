@@ -64,8 +64,14 @@ elif news_class == '案例五':
  st.image(image2, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
  st.markdown(' **text** ：A screenshot of a news article purportedly published in the Pakistani daily ‘Dawn’ is being shared on social media claiming that a Pakistan Pilot was caught pissing in the cockpit of PAF F-16 fighter jet. The headline of this news report claims that Pilot had done this act following Allah’s advise in his dream. Let’s verify the claim made in the post. The news article shared in the post is a photoshopped one. No such report about a Pakistan Pilot pissing in F-16 fighter jet is published on Pakistani news websites. Hence, the claim made in the post is FALSE. When we searched for this news report using the keywords and time filters in Google, it is found that the Pakistan based ‘DAWN’ news did not report any such incident in their newspaper published on ‘10 June 2020’. Misspelt words like ‘efficiancy’ instead of ‘efficiency’ and the usage of randomly capitalized words in the headline indicate that the news report shared in the post could have been a morphed one. On comparing the news report shared in the post with the regular news report published in ‘DAWN’ newspaper, we could find a few differences between them. The regular header below the ‘DAWN’ Logo in the news report is missing in the one shared in the post. A full stop was used at the ending of this news report headline which is not found in the regular format. Also, there is no byline between the headline and the details of the article shared in the post which is present in the regular news reports published on ‘DAWN’ news. On ‘10 June 2020’, ‘DAWN’ news website published an article about misusing their news website to spread false news on social media. In the article, they shared a similar morphed image of another fake news report claimed to be published on their website. From all these pieces of evidence, it is concluded that the screenshot of a news report shared in the article is a photoshopped one. To sum it up, a morphed news report is being shared as Pakistan Pilot caught pissing inside F-16 fighter jet on the advice of Allah.')
 
+if 'clicked' not in st.session_state:
+    st.session_state.clicked = False
+def click_button():
+    st.session_state.clicked = True
+#st.button('点击我', on_click=click_button)
+
 midpro = st.sidebar.radio('2.是否显示中间过程:', ['是', '否'])        
 ifdetect = st.sidebar.button('输出检测结果')
 if midpro == '是':
- if st.sidebar.button('输出检测结果'):
+ if ifdetect:
   st.write('1')
