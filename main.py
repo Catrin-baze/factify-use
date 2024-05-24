@@ -38,7 +38,7 @@ if news_class == '案例一':
 
 elif news_class == '案例三':
  st.subheader('待检测新闻')
- image1 = Image.open('image/claim3.jpg')
+ image1 = Image.open('image/claim3.png')
  st.image(image1, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
  st.markdown(' **text** ：PM Narendra Modi to lay the foundation stone of AIIMS at Rajkot in Gujarat via video conferencing today.')
  st.subheader('参考证据')
@@ -48,7 +48,7 @@ elif news_class == '案例三':
 
 elif news_class == '案例四':
  st.subheader('待检测新闻')
- image1 = Image.open('image/claim4.jpg')
+ image1 = Image.open('image/claim4.png')
  st.image(image1, caption=None, width=300, use_column_width=None, clamp=False, channels="RGB", output_format="auto")
  st.markdown(' **text** ：UPDATE Blackbuck poaching case: The next date of hearing is 27th September. The Court directed Salman Khan to be present before it on that date. He did not appear before the court today.')
  st.subheader('参考证据')
