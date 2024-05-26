@@ -76,9 +76,9 @@ if midpro == '是':
   if ifdetect:
    st.sidebar.markdown('ROUGE字面词汇一致性：0.636364')
    st.sidebar.markdown('Sbert文本语义一致性：0.523785')
-   st.sidebar.markdown('CLIP文本检测结果：文本证据不足')
+   st.sidebar.markdown('CLIP文本检测结果：文本支持')
    st.sidebar.markdown('ResNet图像语义一致性：0.602968')
-   st.sidebar.markdown('**最终检测结果：文本证据不足图像支持**')
+   st.sidebar.markdown('**最终检测结果：多模态支持**')
  elif news_class == '案例二':
    if ifdetect:
     st.sidebar.markdown('ROUGE字面词汇一致性：0.722222')
